@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/util.css" type="text/css"/>
+
+        <title>agenzia immobiliare</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Inserimento.css">
+        <script src="inserimentojs.js" type="text/javascript"> </script>
+        
+    </head>
+    <body onload="hideAll()">
+        <p><font color="red">il nome o il cognome del venditore da lei digitato non esistono inserisci il venditore o rinserisci l'immobile</font></p>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>INSERISCI I  DATI DEL VENDITORE</h3>
+                </div>
+            </div>
+            <form method="post" action="InsVen.php">
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="nome">Nome </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Nome" id="nome" placeholder="Nome Venditore" required="required" maxlength="10" onblur="validateName()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Cognome">Cognome: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Cognome" id="Cognome" placeholder="Cognome Venditore" required="required" maxlength="30" onblur="validateCogn()">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="example-date-input">Data di nascita: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="example-date-input" class="form-control" name="dataNascita" placeholder="Data di Nascita venditore ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="CodF">Codice Fiscale: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="CodF" id="CodF" placeholder="Codice Fiscale Venditore" required="required" maxlength="16" onblur="validateCodFisc()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Comune">Comune di residenza: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Comune" id="Comune" placeholder="Inserisci il comune di residenza dell'acquirente" required="required" maxlength="16" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <button type="submit" class="form-control">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <form action="InsImm.html">
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <button type="submit" class="form-control">Rinserisci l'immobile</button>    
+                    </div>
+                </div> 
+            </form> 
+    </body>
+</html>

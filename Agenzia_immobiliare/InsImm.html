@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>agenzia immobiliare</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="Inserimento.css">
+        <script src="inserimentojs.js" type="text/javascript"> </script>
+    </head>
+    <body onload="hideAll()">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>INSERISCI I  DATI DELL'IMMOBILE</h3>
+                </div>
+            </div>
+            <form method="post" action="InsImm.php">
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="nome">Nome Venditore </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Nome" id="nome" placeholder="Inserisci nome Venditore" required="required" maxlength="10" onblur="validateName()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Cognome">Cognome: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Cognome" id="Cognome" placeholder="Inserisci Cognome Venditore" required="required" maxlength="30" onblur="validateCogn()">
+
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="metri">Inserisci metri quadri casa </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control" name="metri" id="metri" placeholder="Inserisci metri quadri" required="required" maxlength="10">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="via">Inserisci la Via</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Via" id="via" placeholder="Inserisci il comune" required="required" maxlength="30" >
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="comune">Comune</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="comune" id="comune" placeholder="Inserisci la via" required="required" maxlength="30" >
+
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Civ">N°Civ</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="N_Civ" id="Civ" placeholder="Inserisci il Numero civico" required="required" maxlength="4">
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="pia">Piano </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="number" class="form-control" name="pia" id="pia">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="gar">Garage</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="checkbox" class="form-control" name="gar" id="gar" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="PAuto">Posto Auto</label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="checkbox" class="form-control" name="PAuto" id="PAuto">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="seltipo">Tipo di Immobile</label>
+                    </div>
+                    <div class="col-md-3">
+                        <select name="TipImm" id="TipImm">
+                            <option selected>SELEZIONA TIPO IMMOBILE</option>
+                            <option>Appartamento</option>
+                            <option>Villetta a schiera</option>
+                            <option>Casa singola</option>
+                            <option>Casolare</option>
+                            <option>Salone</option>
+                            <option>Ufficio</option>      
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <button type="submit" class="form-control">Submit</button>
+                    </div>
+                </div>
+        </form> 
+    </body>
+ </html>

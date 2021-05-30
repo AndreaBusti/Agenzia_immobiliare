@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>agenzia immobiliare</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body onload="hideAll()">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>INSERISCI I  DATI DI VENDITA O AFFITTO DELL'IMMOBILE</h3>
+                </div>
+            </div>
+            <form method="post" action="Inserire.php">
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="nome">Nome </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Nome" id="nome" placeholder="Nome Acquirente" required="required" maxlength="10" onblur="validateName()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Cognome">Cognome: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Cognome" id="Cognome" placeholder="Cognome Acquirente" required="required" maxlength="30" onblur="validateCogn()">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="example-date-input">Data di nascita: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="example-date-input" class="form-control" name="dataNascita" placeholder="Data di Nascita Acquirente ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="CodF">Codice Fiscale: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="CodF" id="CodF" placeholder="Codice Fiscale Acquirente" required="required" maxlength="16" onblur="validateCodFisc()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="Comune">Comune di residenza: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Comune" id="Comune" placeholder="Inserisci il comune di residenza dell'acquirente" required="required" maxlength="16" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="example-date-input">Data di Acquisto dell'immobile: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="date" id="example-date-input" class="form-control" name="dataAcq" placeholder="Data di Acquisto dell'immobile">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="seltipo">Tipo di Acquisto</label>
+                    </div>
+                    <div class="col-md-3">
+                        <select name="tipo" id="seltipo">
+                            <option selected>SELEZIONA TIPO ACQUISTO</option>
+                            <option>Vendita</option>
+                            <option>Affitto</option>
+                        </select>
+                    </div>
+                </div>
+

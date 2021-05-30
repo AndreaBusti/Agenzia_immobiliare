@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>agenzia immobiliare</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body onload="hideAll()">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>INSERISCI I  DELL'AGENTE</h3>
+                </div>
+            </div>
+            <form method="post" action="InsAg.php">
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="Nome">Nome Agente: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Nome" id="Nome" placeholder="Nome Agente" required="required" maxlength="30" onblur="validateName()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <label for="pass">Password: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="password" class="form-control" name="pass" id="pass"  required="required" maxlength="30">
+
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <label for="Nome_U">Nome Utente: </label>
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" name="Nome_U" id="Nome_U" placeholder="Nome Utente Agente" required="required" maxlength="30">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"> 
+                        <button type="submit" class="form-control">Submit</button>
+                    </div>
+                </div>
+            </form>
+    </body>
+</html>
